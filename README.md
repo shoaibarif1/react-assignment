@@ -8,14 +8,16 @@ This project is a Shift Booking Application built with React. It allows users to
 **Features**
 
 **My Shifts:**
-View all booked shift.
-Grouped by dates.
-Shifts can be canceled.
+
+* View all booked shift.
+* Grouped by dates. 
+* Shifts can be canceled.
 
 **Available Shifts:** 
-View available shifts, filtered by city (Helsinki, Tampere, Turku).
-Shifts can be booked or canceled.
-Prevents booking overlapping shifts.
+
+* View available shifts, filtered by city (Helsinki, Tampere, Turku).
+* Shifts can be booked or canceled.
+* Prevents booking overlapping shifts.
 
 **My Shifts**
 
@@ -37,21 +39,23 @@ Displays shifts filtered by city. Users can book or cancel shifts, and overlappi
 
 **How to Run the Project**
 
-**Clone the repository:**
+* Clone the repository:
 
 **Install dependencies:**
 
-npm install
+* npm install
 
 **Start the development server:**
-npm start
+* npm start
 
-**Visit http://localhost:3000 to view the app in your browser.**
+**Visit**
+
+* http://localhost:3000 to view the app in your browser.
 
 **Dependencies**
 
-React
+* React
 
-React Router DOM
+* React Router DOM
 
-Luxon (for date and time handling)
+* Luxon (for date and time handling)
