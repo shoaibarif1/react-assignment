@@ -28,8 +28,11 @@ Displays shifts filtered by city. Users can book or cancel shifts, and overlappi
 **How the App Works**
 
 **State Management:** The app uses React's Context API to manage global state.
+
 **Mock API:** Instead of calling a backend API, the app loads data from a mock file mockShifts.js.
+
 **Booking Shifts:** When a shift is booked, it is added to the bookedShifts array and marked as booked in availableShifts.
+
 **Canceling Shifts:** Shifts can be canceled if they have not started. Once canceled, the shift is removed from bookedShifts.
 
 **How to Run the Project**
