@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Shift Booking Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Shift Booking Application built with React. It allows users to view, book, and cancel shifts. The project uses mock data to simulate the API for managing shifts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+## My Shifts:
 
-### `npm start`
+* View all booked shifts, grouped by dates.
+  
+* Shifts can be canceled.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Available Shifts:
+* View available shifts
+* filtered by city (Helsinki, Tampere, Turku).
+* Shifts can be booked or canceled.
+* Prevents booking overlapping shifts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### My Shifts
+Shows all the booked shifts, grouped by today's, tomorrow's, and future shifts. Users can cancel shifts unless they’ve already started or completed.
+![Screenshot 2024-10-10 163831](https://github.com/user-attachments/assets/f5c7dca3-58bd-4df5-a19f-dcaadbffd43d)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Available Shifts
+Displays shifts filtered by city. Users can book or cancel shifts, and overlapping bookings are prevented.
+![Screenshot 2024-10-10 163848](https://github.com/user-attachments/assets/524e6fbf-4eb2-42ab-b15d-bb5a84f0f1c2)
+![Screenshot 2024-10-10 163903](https://github.com/user-attachments/assets/e0f4767e-06fd-4bfc-8540-2737423d3eff)
+![Screenshot 2024-10-10 163922](https://github.com/user-attachments/assets/43c91367-0e69-43cf-a780-e390a3b983bd)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### How the App Works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* State Management: The app uses React's Context API to manage global state.
+* Mock API: Instead of calling a backend API, the app loads data from a mock file mockShifts.js.
+* Booking Shifts: When a shift is booked, it is added to the bookedShifts array and marked as booked in availableShifts.
+* Canceling Shifts: Shifts can be canceled if they have not started. Once canceled, the shift is removed from bookedShifts.
+  
+### How to Run the Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Clone the repository:
+  
+ * git clone https://github.com/shoaibarif1/react-assignment.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##### npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Start the development server:
 
-### Code Splitting
+##### npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Dependencies
+* React
+* React Router DOM
+* Luxon (for date and time handling)
