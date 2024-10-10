@@ -1,73 +1,70 @@
-# react-assignment
+# Getting Started with Create React App
 
-Here’s a detailed README file you can use for your project on GitHub:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-**Shift Booking Application**
-This project is a Shift Booking Application built with React. It allows users to view, book, and cancel shifts. The project uses mock data to simulate the API for managing shifts.
+In the project directory, you can run:
 
-**Features**
+### `npm start`
 
-**My Shifts:**
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-* View all booked shift.
-* Grouped by dates. 
-* Shifts can be canceled.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-**Available Shifts:** 
+### `npm test`
 
-* View available shifts, filtered by city (Helsinki, Tampere, Turku).
-* Shifts can be booked or canceled.
-* Prevents booking overlapping shifts.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**My Shifts**
+### `npm run build`
 
-Shows all the booked shifts, grouped by today's, tomorrow's, and future shifts. Users can cancel shifts unless they’ve already started or completed.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![Screenshot 2024-10-10 163831](https://github.com/user-attachments/assets/cc1ef922-4cce-45a6-920d-4e67732900d0)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-**Available Shifts.**
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Displays shifts filtered by city. Users can book or cancel shifts, and overlapping bookings are prevented.
+### `npm run eject`
 
-![Screenshot 2024-10-10 163848](https://github.com/user-attachments/assets/d0b6013a-0f1b-4fee-a531-19d7be307ccf)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-![Screenshot 2024-10-10 163903](https://github.com/user-attachments/assets/7dc0149f-8032-4091-b833-4337de76aa78)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-![Screenshot 2024-10-10 163922](https://github.com/user-attachments/assets/79dd81f1-3a92-4c22-a602-152238c81330)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**How the App Works**
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-**State Management:** The app uses React's Context API to manage global state.
+### Code Splitting
 
-**Mock API:** Instead of calling a backend API, the app loads data from a mock file mockShifts.js.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-**Booking Shifts:** When a shift is booked, it is added to the bookedShifts array and marked as booked in availableShifts.
+### Analyzing the Bundle Size
 
-**Canceling Shifts:** Shifts can be canceled if they have not started. Once canceled, the shift is removed from bookedShifts.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-**How to Run the Project**
+### Making a Progressive Web App
 
-* Clone the repository:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-**Install dependencies:**
+### Advanced Configuration
 
-* npm install
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-**Start the development server:**
-* npm start
+### Deployment
 
-**Visit**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-* http://localhost:3000 to view the app in your browser.
+### `npm run build` fails to minify
 
-**Dependencies**
-
-* React
-
-* React Router DOM
-
-* Luxon (for date and time handling)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
